@@ -4,6 +4,9 @@
 **/*.bcf
 **/*.blg
 **/*.out
+**/*.fls
+**/*.fdb_latexmk
+**/*.xdv
 **/*.run.xml
 **/*.synctex.gz
 **/*.synctex(busy)
