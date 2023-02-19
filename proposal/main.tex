@@ -1,18 +1,23 @@
 \documentclass[a4paper]{article}
-\usepackage{geometry}
+\usepackage[left=2.0cm, top=1.5cm, right=2.0cm, bottom=2.0cm, footskip=.5cm]{geometry}
 \usepackage{amsmath, amsfonts}
-\geometry{left=2.0cm, top=1.5cm, right=2.0cm, bottom=2.0cm, footskip=.5cm}
+\usepackage[hidelinks]{hyperref}
+\usepackage[style=numeric, doi=false,isbn=false,url=false,eprint=false]{biblatex}
 
-\input{sections/title&authors.tex}
+\addbibresource{content/references.bib}
+
+\input{content/title&authors.tex}
 
 \begin{document}
 
 \maketitle
-\input{sections/citations.tex}
-\input{sections/problem.tex}
-\input{sections/background.tex}
-\input{sections/plan.tex}
-\input{sections/evaluate.tex}
-\input{sections/work_division.tex}
+\input{content/citations.tex}
+\input{content/problem.tex}
+\input{content/background.tex}
+\input{content/plan.tex}
+\input{content/evaluate.tex}
+\input{content/work_division.tex}
+
+\printbibliography
 
 \end{document}

@@ -1,4 +1,9 @@
 **/*.aux
 **/*.log
+**/*.bbl
+**/*.bcf
+**/*.blg
+**/*.out
+**/*.run.xml
 **/*.synctex.gz
 **/*.synctex(busy)
