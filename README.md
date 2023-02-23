@@ -1,7 +1,7 @@
 # DSA5204 project
 
-- Paper/Dataset: `paper/`
-- Proposal: `proposal/`
+- Proposal: [`proposal/`](proposal)
+- (TODO) Paper: [`paper/`](paper)
 
 ## Useful links
 
