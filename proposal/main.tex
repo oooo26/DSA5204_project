@@ -1,9 +1,18 @@
 \documentclass[a4paper]{article}
-\usepackage[left=1.5cm, top=1.0cm, right=1.5cm, bottom=1.0cm, footskip=0cm]{geometry}
+\usepackage[left=1.5cm, top=1.5cm, right=1.5cm, bottom=1.5cm, footskip=0cm]{geometry}
 \usepackage{amsmath, amsfonts}
-\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
 \usepackage[style=numeric, doi=false,isbn=false,url=false,eprint=false,sorting=none]{biblatex}
 
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+\urlstyle{same}
 \addbibresource{content/references.bib}
 
 \input{content/title&authors.tex}

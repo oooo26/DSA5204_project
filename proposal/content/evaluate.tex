@@ -2,14 +2,25 @@
 \section{Evaluation}
 We use the dataset Imagenet for reproduction and selfie2anime for additional research which studies the performance of image-to-image models in anime face image generation.
 
-\subsection{Datasets}
-Selfie2anime comprises 3500 unpaired samples of female selfies and female anime face images, 3400 unpaired samples of which are training data and the rest are test data. All images are of same size (256×256).
+\begin{itemize}
+    \item \textbf{Datasets}: 
+    Selfie2anime comprises 3500 unpaired samples of female selfies and female anime face images, 3400 unpaired samples of which are training data and the rest are test data. All images are of same size (256×256).
+    \item \textbf{Baseline models}: 
+    We choose the same baseline models as \cite{zhu_unpaired_2017}, i.e., CoGAN, Pixel loss + GAN, Feature loss + GAN, BiGAN/ALI and pix2pix.
+    \item \textbf{Evaluation metrics}: 
+    For selfie2anime, the Frechet inception distance (FID) score is the most commonly used metrics. A lower FID suggests a shorter distance between the distributions of generated image and real image, thus generated images of better quality\cite{sym12101705}. We also select the kernel inception distance (KID) as a metric, which gives unbiased estimates.
+    \item \textbf{Ablation study}: 
+    To study the effect of each component of loss function, we remove GAN loss and cycle loss respectively and compare their generated images with that of CycleGAN.
+\end{itemize}
 
-\subsection{Baseline models}
-We choose the same baseline models as \cite{zhu_unpaired_2017}, i.e., CoGAN, Pixel loss + GAN, Feature loss + GAN, BiGAN/ALI and pix2pix.
+% \subsection{Datasets}
+% Selfie2anime comprises 3500 unpaired samples of female selfies and female anime face images, 3400 unpaired samples of which are training data and the rest are test data. All images are of same size (256×256).
 
-\subsection{Evaluation metrics}
-For selfie2anime, the Frechet inception distance (FID) score is the most commonly used metrics. A lower FID suggests a shorter distance between the distributions of generated image and real image, thus generated images of better quality\cite{sym12101705}. We also select the kernel inception distance (KID) as a metric, which gives unbiased estimates.
+% \subsection{Baseline models}
+% We choose the same baseline models as \cite{zhu_unpaired_2017}, i.e., CoGAN, Pixel loss + GAN, Feature loss + GAN, BiGAN/ALI and pix2pix.
 
-\subsection{Ablation study}
-To study the effect of each component of loss function, we remove GAN loss and cycle loss respectively and compare their generated images with that of CycleGAN.
+% \subsection{Evaluation metrics}
+% For selfie2anime, the Frechet inception distance (FID) score is the most commonly used metrics. A lower FID suggests a shorter distance between the distributions of generated image and real image, thus generated images of better quality\cite{sym12101705}. We also select the kernel inception distance (KID) as a metric, which gives unbiased estimates.
+
+% \subsection{Ablation study}
+% To study the effect of each component of loss function, we remove GAN loss and cycle loss respectively and compare their generated images with that of CycleGAN.
