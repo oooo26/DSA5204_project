@@ -2,15 +2,15 @@
 \section{Background}
 The traditional Image-to-image translation can be trace back to texture transfer because image style can be seen as a texture, and if we keep some semantic information while compositing image. Then, we can obtain the result of image-to-image translation. However, at this stage, the transformation was based on pixels, the basic image feature, and didn’t include any semantic information. Thus, the performance wasn’t ideal. 
 
-As it was mentioned above, image-to-image translation can be divided into two parts, image texture extraction and image reconstruction, but, for traditional Image-to-image translation, it can hardly solve the reconstruction part. With the rapid development of deep neural network, researchers found that it can be utilized on image recognition, and CNN (e.g., VGG19) can extract the best feature instead of dividing the image into pixel. 
+As it was mentioned above, image-to-image translation can be divided into two parts, image texture extraction and image reconstruction, but, for traditional Image-to-image translation, it can hardly solve the reconstruction part. With the rapid development of deep neural network, researchers found that it can be utilized on image recognition, and CNN (e.g., VGG19 \cite{simonyan2014very}) can extract the best feature instead of dividing the image into pixel. 
 
-After GAN has been proposed, it obtained great performance on image-to-image translation. What make GAN different from the traditional neural network is the design of the loss function. GAN is composed of generator and discriminator, which used to reconstruct the image and distinguish the image respectively (e.g., CycleGAN, which proposed a new loss, Cycle Consistency Loss). 
+After GAN has been proposed, it obtained great performance on image-to-image translation. What make GAN different from the traditional neural network is the design of the loss function. GAN is composed of generator and discriminator, which used to reconstruct the image and distinguish the image respectively (e.g., CycleGAN, which proposed a new loss, Cycle Consistency Loss\cite{zhu_unpaired_2017}). 
 
 Here are the main knowledges we need to learn:
 \begin{enumerate}
   \item The structure of VGG19 and how it was applied in feature extraction.
   \item The different between the loss function in traditional neural network and the one in GAN.
-  \item The structure of GAN, such as the structure of different discriminator (e.g., PatchGAN discriminator, StyleGAN discriminator).
+  \item The structure of GAN, such as the structure of different discriminator (e.g., PatchGAN discriminator\cite{sym12101705}, StyleGAN discriminator\cite{karras2020analyzing}).
   \item The loss proposed by CycleGAN, why adding this loss can improve the performance.
-  \item The metric for automatically evaluating the quality of image generative models.
+  \item The metric for automatically evaluating the quality of image generative models\cite{heusel2017gans}\cite{salimans2016improved}.
 \end{enumerate}
