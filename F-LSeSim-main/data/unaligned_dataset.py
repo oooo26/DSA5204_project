@@ -37,7 +37,7 @@ class UnalignedDataset(BaseDataset):
         # do not perform resize-crop data augmentation of CycleGAN.
         # print('current_epoch', self.current_epoch)
         self.transform = get_transform(opt, convert=False)
-        if self.opt.isTrain and opt.augment:
+        if self.opt.isTrain and False:
             self.transform_aug = transforms.Compose(
                 [transforms.ColorJitter(brightness=0.5, contrast=0.5, saturation=0.5, hue=0.3),
                  transforms.ToTensor(), transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))

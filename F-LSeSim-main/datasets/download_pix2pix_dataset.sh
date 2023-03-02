@@ -14,9 +14,9 @@ fi
 echo "Specified [$FILE]"
 
 URL=http://efrosgans.eecs.berkeley.edu/pix2pix/datasets/$FILE.tar.gz
-TAR_FILE=./datasets/$FILE.tar.gz
-TARGET_DIR=./datasets/$FILE/
+TAR_FILE=./data3/shuyuan/$FILE.tar.gz
+TARGET_DIR=./data3/shuyuan/$FILE/
 wget -N $URL -O $TAR_FILE
 mkdir -p $TARGET_DIR
-tar -zxvf $TAR_FILE -C ./datasets/
+tar -zxvf $TAR_FILE -C TARGET_DIR
 rm $TAR_FILE

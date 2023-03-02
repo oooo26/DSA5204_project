@@ -4,4 +4,4 @@ python test.py \
 --checkpoints_dir ./checkpoints \
 --name horse2zebra \
 --model sc \
---num_test 0
+--num_test

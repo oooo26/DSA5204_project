@@ -1,6 +1,6 @@
 set -ex
 python train.py  \
---dataroot /media/lyndon/c6f4bbbd-8d47-4dcb-b0db-d788fe2b25571/dataset/image_translation/horse2zebra \
+--dataroot ./datasets/horse2zebra \
 --name horse2zebra \
 --model sc \
 --gpu_ids 1 \
