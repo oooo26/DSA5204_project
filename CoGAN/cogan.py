@@ -138,10 +138,10 @@ coupled_generators.apply(weights_init_normal)
 coupled_discriminators.apply(weights_init_normal)
 
 # Configure data loader
-os.makedirs("../../data/mnist", exist_ok=True)
+os.makedirs("data/mnist", exist_ok=True)
 dataloader1 = torch.utils.data.DataLoader(
     datasets.MNIST(
-        "../../data/mnist",
+        "data/mnist",
         train=True,
         download=True,
         transform=transforms.Compose(
@@ -152,10 +152,10 @@ dataloader1 = torch.utils.data.DataLoader(
     shuffle=True,
 )
 
-os.makedirs("../../data/mnistm", exist_ok=True)
+os.makedirs("data/mnistm", exist_ok=True)
 dataloader2 = torch.utils.data.DataLoader(
     mnistm.MNISTM(
-        "../../data/mnistm",
+        "data/mnistm",
         train=True,
         download=True,
         transform=transforms.Compose(
