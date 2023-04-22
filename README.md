@@ -1,4 +1,4 @@
-# DSA5204 Project
+# DSA5204 Project - Image to Image Translation Study
 
 - Proposal: [`proposal/`](proposal)
 - Models: [`models`](models)
@@ -21,7 +21,7 @@ paper (paper with code): https://paperswithcode.com/paper/unpaired-image-to-imag
 
 datasets: https://paperswithcode.com/task/image-to-image-translation
 
-## Group 14 members
+## Group Members (Group 14)
 
 - Yanrong Chen
 - Shuyuan Shen
