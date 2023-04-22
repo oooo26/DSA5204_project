@@ -1,0 +1,15 @@
+[submodule "models/DualGAN"]
+	path = models/DualGAN
+	url = https://github.com/duxingren14/DualGAN
+[submodule "models/CoGAN"]
+	path = models/CoGAN
+	url = https://github.com/mingyuliutw/CoGAN
+[submodule "models/F-LSeSim"]
+	path = models/F-LSeSim
+	url = https://github.com/lyndonzheng/F-LSeSim
+[submodule "models/pix2pix"]
+	path = models/pix2pix
+	url = https://github.com/phillipi/pix2pix
+[submodule "models/PyTorch-GAN"]
+	path = models/PyTorch-GAN
+	url = https://github.com/eriklindernoren/PyTorch-GAN

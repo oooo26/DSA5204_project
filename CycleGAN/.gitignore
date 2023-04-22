@@ -1,5 +1,0 @@
-__pycache__/
-images/
-
-data/*
-!data/download_cyclegan_dataset.sh
