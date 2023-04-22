@@ -8,7 +8,8 @@
 
 ## Run on our dataset
 
-The dataloader should be modified to use other dataset, like [selfie2anime](https://paperswithcode.com/dataset/selfie2anime).
+The dataloader should be modified to use other datasets, like [horse2zebra](https://www.kaggle.com/datasets/balraj98/horse2zebra-dataset) or [selfie2anime](https://paperswithcode.com/dataset/selfie2anime).
 
-- For Pix2pix, you may need to manually pair the images;
-- For CoGAN, you may need to modify the network to fit higher resolution;
+Specifically, 
+- For Pix2pix, you also need to manually pair the images;
+- For CoGAN, you also need to modify the network to fit higher resolution;
